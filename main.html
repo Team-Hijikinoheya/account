@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理者ページ</title>
+    <link rel="stylesheet" href="styles_m.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>管理者ページ</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">ダッシュボード</a></li>
+                <li><a href="#user-management">ユーザー管理</a></li>
+                <li><a href="#content-management">コンテンツ管理</a></li>
+                <li><a href="#settings">設定</a></li>
+                <li><a href="https://team-hijikinoheya.github.io/site/">ホームに戻る</a></li>
+            </ul>
+        </nav>
+
+        <section id="dashboard">
+            <h2>ダッシュボード</h2>
+            <p>サイトのステータスや最近のアクティビティが表示されます。</p>
+        </section>
+
+        <section id="user-management">
+            <h2>ユーザー管理</h2>
+            <button onclick="addUser()">ユーザー追加</button>
+            <button onclick="editUser()">ユーザー編集</button>
+            <button onclick="deleteUser()">ユーザー削除</button>
+            <div id="user-list">
+                <p>ユーザーリストがここに表示されます。</p>
+            </div>
+        </section>
+
+        <section id="content-management">
+            <h2>コンテンツ管理</h2>
+            <button onclick="addContent()">新しいコンテンツ追加</button>
+            <button onclick="editContent()">コンテンツ編集</button>
+            <button onclick="deleteContent()">コンテンツ削除</button>
+            <div id="content-list">
+                <p>コンテンツリストがここに表示されます。</p>
+            </div>
+        </section>
+
+        <section id="settings">
+            <h2>設定</h2>
+            <button onclick="changeSettings()">設定変更</button>
+        </section>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
